@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">DrupalCon</string>
-    <string name="Sessions">Sessions</string>
+    <string name="app_name">G2016</string>
+    <string name="Sessions">Conférences</string>
     <string name="bofs">BoFs</string>
-    <string name="speakers">Speakers</string>
-    <string name="location">Location</string>
-    <string name="about">Info</string>
-    <string name="my_schedule">My Schedule</string>
-    <string name="social_events">Social Events</string>
-    <string name="search">Search</string>
-    <string name="filter">Filter</string>
+    <string name="speakers">Présentateurs</string>
+    <string name="location">Localisation</string>
+    <string name="about">À Propos</string>
+    <string name="my_schedule">Mon Horaire</string>
+    <string name="social_events">Événements Sociaux</string>
+    <string name="search">Rechercher</string>
+    <string name="filter">Filtrer</string>
     <string name="experience_level">Experience level:</string>
     <string name="tracks">Tracks</string>
     <string name="exp_levels">Experience Levels</string>
@@ -20,7 +20,7 @@
     <string name="title_share">Share using</string>
     <string name="event_category">Event</string>
     <string name="speaker_category">Speaker</string>
-    <string name="about_category">About</string>
+    <string name="about_category">À Propos</string>
     <string name="action_open">Open</string>
     <string name="action_close">Close</string>
     <string name="action_add_to_favorites">Add to favorites</string>
@@ -59,6 +59,6 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="social_media">Social Media</string>
-    <string name="floor_plan">Floor Plans</string>
+    <string name="social_media">Réseau Sociaux</string>
+    <string name="floor_plan">Plan Étages</string>
 </resources>
