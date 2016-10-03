@@ -8,7 +8,7 @@
       "client_info": {
         "mobilesdk_app_id": "1:997125724112:android:be57697bdef7aa71",
         "android_client_info": {
-          "package_name": "com.ls.drupalconapp"
+          "package_name": "io.anagraph.g2016app"
         }
       },
       "oauth_client": [],
@@ -21,7 +21,7 @@
         "analytics_service": {
           "status": 2,
           "analytics_property": {
-            "tracking_id": "UA-267362-65"
+            "tracking_id": "UA-63170826-2"
           }
         },
         "appinvite_service": {
