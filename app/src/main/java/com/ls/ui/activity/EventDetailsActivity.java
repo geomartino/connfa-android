@@ -222,7 +222,7 @@ public class EventDetailsActivity extends StackKeeperActivity {
         String eventLocation = DateUtils.getInstance().getWeekDay(mEventStartDate) + ", " + fromTime + " - " + toTime;
 
         if (!TextUtils.isEmpty(event.getPlace())) {
-            String eventPlace = String.format(" in %s", event.getPlace());
+            String eventPlace = String.format(" dans %s", event.getPlace());
             eventLocation += eventPlace;
         }
 

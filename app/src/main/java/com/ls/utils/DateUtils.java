@@ -22,7 +22,7 @@ public class DateUtils {
     private static DateUtils mUtils;
 
     public DateUtils() {
-        mDateFormat = new SimpleDateFormat("", Locale.ENGLISH);
+        mDateFormat = new SimpleDateFormat("", Locale.FRENCH);
         mTimezone = PreferencesManager.getInstance().getServerTimeZoneObject();
         mDateFormat.setTimeZone(mTimezone);
     }
@@ -42,7 +42,7 @@ public class DateUtils {
 
     @Nullable
     public synchronized  Date convertEventDayDate(String day) {
-        mDateFormat.applyPattern("d-MM-yyyy");
+        mDateFormat.applyPattern("dd-MM-yyyy");
 
         try {
             return mDateFormat.parse(day);
@@ -112,8 +112,7 @@ public class DateUtils {
         Calendar calendar = Calendar.getInstance();
         calendar.setTimeInMillis(millis);
         calendar.setTimeZone(mTimezone);
-
-        return calendar.getDisplayName(Calendar.DAY_OF_WEEK, Calendar.SHORT, Locale.US);
+        return calendar.getDisplayName(Calendar.DAY_OF_WEEK, Calendar.SHORT, Locale.FRENCH);
     }
 
     public synchronized String getWeekNameAndDate(long millis) {

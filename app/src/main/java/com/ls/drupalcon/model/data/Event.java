@@ -151,10 +151,10 @@ public class Event extends AbstractEntity<Long> implements Comparable<Event>{
         Calendar to = null;
 
         if (fromMillis != Long.MAX_VALUE && toMillis != Long.MAX_VALUE) {
-            from = Calendar.getInstance(Locale.UK);
+            from = Calendar.getInstance(Locale.CANADA_FRENCH);
             from.setTimeInMillis(fromMillis);
 
-            to = Calendar.getInstance(Locale.UK);
+            to = Calendar.getInstance(Locale.CANADA_FRENCH);
             to.setTimeInMillis(toMillis);
 
             mFromTime = convertTime(from);
@@ -169,7 +169,7 @@ public class Event extends AbstractEntity<Long> implements Comparable<Event>{
             return 0;
         }
 
-        SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ssZZZZZ", Locale.ENGLISH);
+        SimpleDateFormat format = new SimpleDateFormat("dd-MM-yyyy'T'HH:mm:ssZZZZZ", Locale.FRENCH);
         try {
             Date date = format.parse(time);
             return date.getTime();
@@ -181,7 +181,7 @@ public class Event extends AbstractEntity<Long> implements Comparable<Event>{
 
     public static String convertTime(Calendar time) {
         if (time != null) {
-            SimpleDateFormat format = new SimpleDateFormat("kk:mm", Locale.ENGLISH);
+            SimpleDateFormat format = new SimpleDateFormat("kk:mm", Locale.FRENCH);
             format.setTimeZone(PreferencesManager.getInstance().getServerTimeZoneObject());
             return format.format(time.getTime());
         } else {

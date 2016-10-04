@@ -84,14 +84,15 @@ public class SpeakersAdapter extends BaseAdapter implements Filterable {
         holder.imgPhoto.setImageWithURL(imageUrl);
 
         String organization = speaker.getOrganization();
-        String jobTitle = speaker.getJobTitle();
-        String space = (isEmpty(organization) && isEmpty(jobTitle))
-                || isEmpty(organization)
-                || isEmpty(jobTitle)
-                ? "" : " / ";
+        //String jobTitle = speaker.getJobTitle();
+        //String space = (isEmpty(organization) && isEmpty(jobTitle))
+        //        || isEmpty(organization)
+        //       || isEmpty(jobTitle)
+        //        ? "" : " / ";
 
         holder.txtName.setText(speaker.getFirstName() + " " + speaker.getLastName());
-        holder.txtOrgAndJobTitle.setText(organization + space + jobTitle);
+        //holder.txtOrgAndJobTitle.setText(organization + space + jobTitle);
+        holder.txtOrgAndJobTitle.setText(organization);
 
         if (mLetterPositions.get(position)) {
             String letter = speaker.getFirstName().substring(0, 1).toUpperCase();

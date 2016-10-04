@@ -180,18 +180,19 @@ public class SpeakerDetailsActivity extends StackKeeperActivity implements View.
         speakerName += TextUtils.isEmpty(mSpeaker.getLastName()) ? "" : mSpeaker.getLastName();
         ((TextView) findViewById(R.id.txtSpeakerName)).setText(speakerName);
 
-        if (TextUtils.isEmpty(mSpeaker.getJobTitle()) && TextUtils.isEmpty(mSpeaker.getOrganization())) {
-            findViewById(R.id.txtSpeakerPosition).setVisibility(View.GONE);
-        } else {
-            findViewById(R.id.txtSpeakerPosition).setVisibility(View.VISIBLE);
-        }
+        //if (TextUtils.isEmpty(mSpeaker.getJobTitle()) && TextUtils.isEmpty(mSpeaker.getOrganization())) {
+        //findViewById(R.id.txtSpeakerPosition).setVisibility(View.GONE);
+        //} else {
+        findViewById(R.id.txtSpeakerPosition).setVisibility(View.VISIBLE);
+        //}
 
         TextView jobTxt = (TextView) findViewById(R.id.txtSpeakerPosition);
-        String jobValue = mSpeaker.getJobTitle() + " at " + mSpeaker.getOrganization();
+        //String jobValue = mSpeaker.getJobTitle() + " à " + mSpeaker.getOrganization();
+        String jobValue = mSpeaker.getOrganization();
 
-        if ( TextUtils.isEmpty(mSpeaker.getJobTitle()) || TextUtils.isEmpty(mSpeaker.getOrganization()) ){
-            jobValue = jobValue.replace(" at ", "");
-        }
+        //if ( TextUtils.isEmpty(mSpeaker.getJobTitle()) || TextUtils.isEmpty(mSpeaker.getOrganization()) ){
+        //    jobValue = jobValue.replace(" à ", "");
+        //}
 
         jobTxt.setText(jobValue);
     }
@@ -286,7 +287,7 @@ public class SpeakerDetailsActivity extends StackKeeperActivity implements View.
         String date = String.format("%s, %s - %s", weekDay, fromTime, toTime);
         txtWhere.setText(date);
         if (!event.getPlace().equals("")) {
-            txtWhere.append(String.format(" in %s", event.getPlace()));
+            txtWhere.append(String.format(" dans %s", event.getPlace()));
         }
 
         initEventExpLevel(eventView, event);

@@ -319,10 +319,10 @@ public class EventDao extends AbstractEntityDAO<Event, Long> {
                 long date = parser.readLong();
 
                 if (fromTime != Long.MAX_VALUE && toTime != Long.MAX_VALUE) {
-                    from = Calendar.getInstance(Locale.UK);
+                    from = Calendar.getInstance(Locale.CANADA_FRENCH);
                     from.setTimeInMillis(fromTime);
 
-                    to = Calendar.getInstance(Locale.UK);
+                    to = Calendar.getInstance(Locale.CANADA_FRENCH);
                     to.setTimeInMillis(toTime);
                 }
 

@@ -39,10 +39,10 @@ public class DrawerManager {
 				fragmentTag = EventHolderFragment.TAG;
 				break;
 
-			case Bofs:
-				fragment = EventHolderFragment.newInstance(DrawerMenu.DrawerItem.Bofs.ordinal());
-				fragmentTag = EventHolderFragment.TAG;
-				break;
+			//case Bofs:
+			//	fragment = EventHolderFragment.newInstance(DrawerMenu.DrawerItem.Bofs.ordinal());
+			//	fragmentTag = EventHolderFragment.TAG;
+			//	break;
 
 			case Social:
 				fragment = EventHolderFragment.newInstance(DrawerMenu.DrawerItem.Social.ordinal());
@@ -89,9 +89,9 @@ public class DrawerManager {
 				fragment = EventHolderFragment.newInstance(DrawerMenu.DrawerItem.Program.ordinal());
 				break;
 
-			case Bofs:
-				fragment = EventHolderFragment.newInstance(DrawerMenu.DrawerItem.Bofs.ordinal());
-				break;
+			//case Bofs:
+			//	fragment = EventHolderFragment.newInstance(DrawerMenu.DrawerItem.Bofs.ordinal());
+			//	break;
 
 			case Social:
 				fragment = EventHolderFragment.newInstance(DrawerMenu.DrawerItem.Social.ordinal());
